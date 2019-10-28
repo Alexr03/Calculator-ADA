@@ -33,25 +33,26 @@ namespace FirstAdaTask.Databases
             return GetValue(predefinedKey.ToString());
         }
 
-        public void SetValue(string key, object value)
+        public void SetValue(string key, object value, bool overwrite = false)
         {
             if (_dictionaryContainer.ContainsKey(key))
             {
-                _dictionaryContainer[key] = value;
+                if(overwrite)
+                    _dictionaryContainer[key] = value;
                 return;
             }
 
             _dictionaryContainer.Add(key, value);
         }
+        
+        public void SetValue(PredefinedKeys key, object value, bool overwrite = false)
+        {
+            SetValue(key.ToString(), value, overwrite);
+        }
 
         public override string ToString()
         {
             return _dictionaryContainer.Aggregate(string.Empty, (current, pair) => current + $"{pair.Key} = {pair.Value} | ");
-        }
-
-        public void SetValue(PredefinedKeys key, object value)
-        {
-            SetValue(key.ToString(), value);
         }
     }
 }

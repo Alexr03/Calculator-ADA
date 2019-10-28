@@ -7,6 +7,7 @@ namespace FirstAdaTask
         public enum MenuOptions
         {
             Calculator = 1,
+            DebugPrintDb,
             Exit
         }
         
@@ -45,6 +46,9 @@ namespace FirstAdaTask
                     Console.WriteLine("The answer is: " + calculator.ComputeMath(Console.ReadLine()));
                     break;
                 }
+                case MenuOptions.DebugPrintDb:
+                    Console.WriteLine(Program.GlobalDb.ToString());
+                    break;
                 case MenuOptions.Exit:
                 {
                     Console.WriteLine("Quitting...");
