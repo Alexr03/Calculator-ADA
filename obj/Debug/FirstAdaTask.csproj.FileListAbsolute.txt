@@ -1,0 +1,5 @@
+C:\Users\Student\RiderProjects\FirstAdaTask\bin\Debug\FirstAdaTask.exe
+C:\Users\Student\RiderProjects\FirstAdaTask\bin\Debug\FirstAdaTask.pdb
+C:\Users\Student\RiderProjects\FirstAdaTask\obj\Debug\FirstAdaTask.csprojAssemblyReference.cache
+C:\Users\Student\RiderProjects\FirstAdaTask\obj\Debug\FirstAdaTask.exe
+C:\Users\Student\RiderProjects\FirstAdaTask\obj\Debug\FirstAdaTask.pdb
